@@ -33,7 +33,7 @@ Promise.all(promises).then((result)=>{
 	const totalTime = result.reduce((acc,curr)=> acc + curr,0);
 	totalRow.children[1].textContent = totalTime;
 
-	const loadingRow = document.querySelector("tbody tr:first-child");
+	const loadingRow = document.querySelector("#loading");
     loadingRow.remove();
 	
 })
